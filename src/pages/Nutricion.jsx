@@ -8,7 +8,7 @@ export default function Nutricion() {
       <div className="card-grid">
         <div className="card">
           <img
-            src="https://images.unsplash.com/photo-1572441710534-016a7b2e986d"
+            src="/img/batido-detox.png"
             alt="Batido verde detox"
           />
           <h3>Batido Verde Detox</h3>
