@@ -1,5 +1,9 @@
 import './Nutricion.css';
 
+import ensaladaImg from '../assets/ensalada-mediterranea.png';
+import aguacateImg from '../assets/aguacate.png';
+import avenaImg from '../assets/avena.png';
+
 export default function Nutricion() {
   return (
     <div className="page-container">
@@ -8,7 +12,7 @@ export default function Nutricion() {
       <div className="card-grid">
         <div className="card">
           <img
-            src="/img/batido-detox.png"
+            src="https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=500" 
             alt="Batido verde detox"
           />
           <h3>Batido Verde Detox</h3>
@@ -16,28 +20,22 @@ export default function Nutricion() {
         </div>
 
         <div className="card">
-          <img
-            src="https://images.unsplash.com/photo-1613145998576-d93b5552a8f4"
-            alt="Ensalada mediterránea"
-          />
+          <img src={ensaladaImg} alt="Ensalada mediterránea" />
+
           <h3>Ensalada Mediterránea</h3>
           <p>Garbanzos, pepino, tomate cherry, y aceite de oliva virgen extra.</p>
         </div>
 
         <div className="card">
-          <img
-            src="https://images.unsplash.com/photo-1565958011703-44f9829ba187"
-            alt="Tostada de aguacate"
-          />
+          <img src={aguacateImg} alt="Tostada de aguacate" />
+
           <h3>Tostada de Aguacate</h3>
           <p>Pan integral con aguacate, huevo poché y semillas de sésamo.</p>
         </div>
 
         <div className="card">
-          <img
-            src="https://images.unsplash.com/photo-1584270354949-1d75a6d8f7d3"
-            alt="Bowl de avena"
-          />
+          <img src={avenaImg} alt="Bowl de avena" />
+
           <h3>Bowl de Avena</h3>
           <p>Avena con bebida vegetal, frutas rojas y semillas de chía.</p>
         </div>
