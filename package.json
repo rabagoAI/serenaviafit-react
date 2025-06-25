@@ -13,7 +13,9 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://rabagoAI.github.io/reactSerena",
+  
+  "homepage": "https://rabagoAI.github.io/serenaviafit-react",
+
 
   "scripts": {
   "start": "react-scripts start",
@@ -23,6 +25,7 @@
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build"
 },
+  
   "eslintConfig": {
     "extends": [
       "react-app",
