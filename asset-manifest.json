@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/reactSerena/static/css/main.9508a12a.css",
-    "main.js": "/reactSerena/static/js/main.e746cbd6.js",
-    "static/js/453.09a8c62f.chunk.js": "/reactSerena/static/js/453.09a8c62f.chunk.js",
-    "static/media/ensalada-mediterranea.png": "/reactSerena/static/media/ensalada-mediterranea.58baedfa59ed1067ddc7.png",
-    "static/media/aguacate.png": "/reactSerena/static/media/aguacate.5fb04b7d9f9a2a8ccd11.png",
-    "static/media/fuerza-sin-pesas.PNG": "/reactSerena/static/media/fuerza-sin-pesas.f76e0f3c3b870d39a519.PNG",
-    "static/media/antioxidantes.png": "/reactSerena/static/media/antioxidantes.e5a16b8afb2537f6bf7a.png",
-    "static/media/avena.png": "/reactSerena/static/media/avena.7688c7be1dd935304987.png",
-    "static/media/logo.png": "/reactSerena/static/media/logo.1fd4cba52ad3b67dd2e5.png",
-    "static/media/estiramientos.png": "/reactSerena/static/media/estiramientos.6f2ae7fcab190cbfdc57.png",
-    "static/media/mascarilla.png": "/reactSerena/static/media/mascarilla.f9cc4d526929e364af45.png",
-    "static/media/hiit-casa.png": "/reactSerena/static/media/hiit-casa.494cecc69f2f6c24dd29.png",
-    "static/media/yoga-principiantes.png": "/reactSerena/static/media/yoga-principiantes.d5aeb97b924eaf4b24cf.png",
-    "static/media/hidratacion.png": "/reactSerena/static/media/hidratacion.e4025da901ec3c117c85.png",
-    "static/media/sueno.png": "/reactSerena/static/media/sueno.e50777d5b45313116095.png",
-    "static/media/bienestar.png": "/reactSerena/static/media/bienestar.f2f95329c54d4c6f97b6.png",
-    "static/media/portada-fit.jpg": "/reactSerena/static/media/portada-fit.7fdeb2410a9a9ee88254.jpg",
-    "index.html": "/reactSerena/index.html",
-    "main.9508a12a.css.map": "/reactSerena/static/css/main.9508a12a.css.map",
-    "main.e746cbd6.js.map": "/reactSerena/static/js/main.e746cbd6.js.map",
-    "453.09a8c62f.chunk.js.map": "/reactSerena/static/js/453.09a8c62f.chunk.js.map"
+    "main.css": "/serenaviafit-react/static/css/main.9508a12a.css",
+    "main.js": "/serenaviafit-react/static/js/main.a12b8731.js",
+    "static/js/453.09a8c62f.chunk.js": "/serenaviafit-react/static/js/453.09a8c62f.chunk.js",
+    "static/media/ensalada-mediterranea.png": "/serenaviafit-react/static/media/ensalada-mediterranea.58baedfa59ed1067ddc7.png",
+    "static/media/aguacate.png": "/serenaviafit-react/static/media/aguacate.5fb04b7d9f9a2a8ccd11.png",
+    "static/media/fuerza-sin-pesas.PNG": "/serenaviafit-react/static/media/fuerza-sin-pesas.f76e0f3c3b870d39a519.PNG",
+    "static/media/antioxidantes.png": "/serenaviafit-react/static/media/antioxidantes.e5a16b8afb2537f6bf7a.png",
+    "static/media/avena.png": "/serenaviafit-react/static/media/avena.7688c7be1dd935304987.png",
+    "static/media/logo.png": "/serenaviafit-react/static/media/logo.1fd4cba52ad3b67dd2e5.png",
+    "static/media/estiramientos.png": "/serenaviafit-react/static/media/estiramientos.6f2ae7fcab190cbfdc57.png",
+    "static/media/mascarilla.png": "/serenaviafit-react/static/media/mascarilla.f9cc4d526929e364af45.png",
+    "static/media/hiit-casa.png": "/serenaviafit-react/static/media/hiit-casa.494cecc69f2f6c24dd29.png",
+    "static/media/yoga-principiantes.png": "/serenaviafit-react/static/media/yoga-principiantes.d5aeb97b924eaf4b24cf.png",
+    "static/media/hidratacion.png": "/serenaviafit-react/static/media/hidratacion.e4025da901ec3c117c85.png",
+    "static/media/sueno.png": "/serenaviafit-react/static/media/sueno.e50777d5b45313116095.png",
+    "static/media/bienestar.png": "/serenaviafit-react/static/media/bienestar.f2f95329c54d4c6f97b6.png",
+    "static/media/portada-fit.jpg": "/serenaviafit-react/static/media/portada-fit.7fdeb2410a9a9ee88254.jpg",
+    "index.html": "/serenaviafit-react/index.html",
+    "main.9508a12a.css.map": "/serenaviafit-react/static/css/main.9508a12a.css.map",
+    "main.a12b8731.js.map": "/serenaviafit-react/static/js/main.a12b8731.js.map",
+    "453.09a8c62f.chunk.js.map": "/serenaviafit-react/static/js/453.09a8c62f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9508a12a.css",
-    "static/js/main.e746cbd6.js"
+    "static/js/main.a12b8731.js"
   ]
 }
