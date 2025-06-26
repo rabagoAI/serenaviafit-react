@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/serenaviafit-react/static/css/main.9508a12a.css",
-    "main.js": "/serenaviafit-react/static/js/main.a12b8731.js",
+    "main.css": "/serenaviafit-react/static/css/main.ac3b012a.css",
+    "main.js": "/serenaviafit-react/static/js/main.8da3f52f.js",
     "static/js/453.09a8c62f.chunk.js": "/serenaviafit-react/static/js/453.09a8c62f.chunk.js",
     "static/media/ensalada-mediterranea.png": "/serenaviafit-react/static/media/ensalada-mediterranea.58baedfa59ed1067ddc7.png",
     "static/media/aguacate.png": "/serenaviafit-react/static/media/aguacate.5fb04b7d9f9a2a8ccd11.png",
@@ -18,12 +18,12 @@
     "static/media/bienestar.png": "/serenaviafit-react/static/media/bienestar.f2f95329c54d4c6f97b6.png",
     "static/media/portada-fit.jpg": "/serenaviafit-react/static/media/portada-fit.7fdeb2410a9a9ee88254.jpg",
     "index.html": "/serenaviafit-react/index.html",
-    "main.9508a12a.css.map": "/serenaviafit-react/static/css/main.9508a12a.css.map",
-    "main.a12b8731.js.map": "/serenaviafit-react/static/js/main.a12b8731.js.map",
+    "main.ac3b012a.css.map": "/serenaviafit-react/static/css/main.ac3b012a.css.map",
+    "main.8da3f52f.js.map": "/serenaviafit-react/static/js/main.8da3f52f.js.map",
     "453.09a8c62f.chunk.js.map": "/serenaviafit-react/static/js/453.09a8c62f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9508a12a.css",
-    "static/js/main.a12b8731.js"
+    "static/css/main.ac3b012a.css",
+    "static/js/main.8da3f52f.js"
   ]
 }
