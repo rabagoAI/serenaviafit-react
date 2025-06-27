@@ -20,23 +20,28 @@ export default function Deporte() {
           title="Rutina HIIT en casa"
           desc="Entrenamiento de alta intensidad en solo 20 minutos. Sin equipamiento."
           link="/rutina/hiit-en-casa"
-/>
+          />
         <EjercicioCard
           img={yogaImg}
           title="Yoga para Principiantes"
           desc="Estira, relaja y fortalece tu cuerpo y mente. Ideal para empezar el día."
           link="/rutina/yoga-principiantes"
-/>
+          />
+
         <EjercicioCard
           img={fuerzaImg}
           title="Entrenamiento de fuerza sin pesas"
           desc="Flexiones, sentadillas, planchas y más usando solo tu cuerpo."
+          link="/rutina/fuerza-sin-pesas"
         />
+
         <EjercicioCard
           img={estiramientoImg}
           title="Estiramientos diarios"
           desc="Cuida tus músculos y previene lesiones con una rutina de estiramientos."
+          link="/rutina/estiramientos-diarios"
         />
+        
       </div>
     </div>
   );
