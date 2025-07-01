@@ -6,6 +6,7 @@ export default function TemporizadorRutina({ ejercicios }) {
   const [activo, setActivo] = useState(false);
   const [finalizado, setFinalizado] = useState(false);
   const beep = new Audio(process.env.PUBLIC_URL + '/audio/beep.mp3');
+  
 
 
   useEffect(() => {
@@ -57,6 +58,16 @@ export default function TemporizadorRutina({ ejercicios }) {
           <p>⏱ Tiempo restante: {tiempoRestante}s</p>
         </>
       )}
+
+      <div className="barra-contenedor">
+        <div
+        className="barra-progreso"
+        style={{
+        width: `${100 - (tiempoRestante / (typeof ejercicioActual === 'object' ? ejercicioActual.duracion : 40)) * 100}%`
+        }}
+        />
+      </div>
+
 
       {finalizado && (
         <h3>🎉 ¡Rutina completada!</h3>

@@ -37,3 +37,19 @@ ul li {
 .temporizador button:hover {
   background: #1f4020;
 }
+
+.barra-contenedor {
+  width: 100%;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 6px;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.barra-progreso {
+  height: 100%;
+  background: #2c5f2d;
+  transition: width 1s linear;
+}
+
