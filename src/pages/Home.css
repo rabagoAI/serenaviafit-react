@@ -1,74 +1,180 @@
-.home-page {
-  padding-bottom: 3rem;
-}
-
-.hero {
-  /* La imagen se define ahora en el JSX con style inline */
+.hero-optimizada {
   background-size: cover;
   background-position: center;
   color: white;
-  text-align: center;
   padding: 6rem 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  min-height: 80vh;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.5);
-  z-index: 1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
+.hero-contenido {
   max-width: 800px;
-  margin: auto;
+  z-index: 2;
+  position: relative;
 }
 
-.hero h1 {
+.hero-titulo {
   font-size: 2.8rem;
   margin-bottom: 1rem;
+  animation: fadeInDown 1s ease-out;
 }
 
-.hero-button {
+.hero-subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-in;
+}
+
+.hero-boton {
   background: #2c5f2d;
   color: white;
   padding: 1rem 2rem;
+  border-radius: 8px;
   text-decoration: none;
-  border-radius: 6px;
   font-weight: bold;
   transition: background 0.3s;
+  animation: fadeInUp 1.2s ease-in;
 }
 
-.hero-button:hover {
+.hero-boton:hover {
   background: #1f4020;
 }
 
-.destacados {
-  padding: 3rem 2rem;
+/* Animaciones */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-titulo {
+    font-size: 2rem;
+  }
+
+  .hero-subtitulo {
+    font-size: 1rem;
+  }
+}
+
+.beneficios-home {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
   text-align: center;
 }
 
-.destacado-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+.beneficios-home h2 {
+  font-size: 2rem;
+  color: #2c5f2d;
+  margin-bottom: 2rem;
 }
 
-.card {
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.beneficio {
   background: white;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-decoration: none;
-  color: #333;
-  transition: transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
 }
 
-.card:hover {
+.beneficio:hover {
   transform: translateY(-5px);
 }
+
+.icono {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.recetas-home {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.recetas-home h2 {
+  font-size: 2rem;
+  color: #2c5f2d;
+  margin-bottom: 2rem;
+}
+
+.recetas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+}
+
+.receta-card {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s;
+}
+
+.receta-card:hover {
+  transform: translateY(-5px);
+}
+
+.receta-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.btn-receta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #2c5f2d;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.btn-receta:hover {
+  background: #1f4020;
+}
+
+.btn-ver-todas {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #2c5f2d;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
