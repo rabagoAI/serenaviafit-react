@@ -9,6 +9,13 @@ import './assets/Header.css';
 import Blog from './pages/Blog';
 import Post from './pages/Post';
 import Rutina from './pages/Rutina';
+import RecetaBatido from './pages/RecetaBatido';
+import RecetaAvena from './pages/RecetaAvena';
+import RecetaAguacate from './pages/RecetaAguacate';
+import RecetaEnsalada from './pages/RecetaEnsalada';
+
+
+
 
 function App() {
   return (
@@ -24,6 +31,12 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<Post />} />
           <Route path="/rutina/:id" element={<Rutina />} />
+          <Route path="/receta/batido-verde-detox" element={<RecetaBatido />} />
+          <Route path="/receta/avena" element={<RecetaAvena />} />
+          <Route path="/receta/aguacate" element={<RecetaAguacate />} />
+          <Route path="/receta/ensalada" element={<RecetaEnsalada />} />
+
+
 
         </Routes>
       </main>
