@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/serenaviafit-react/static/css/main.eaf4dedc.css",
-    "main.js": "/serenaviafit-react/static/js/main.9c3b7296.js",
+    "main.css": "/serenaviafit-react/static/css/main.9d0588b6.css",
+    "main.js": "/serenaviafit-react/static/js/main.76761858.js",
     "static/js/453.09a8c62f.chunk.js": "/serenaviafit-react/static/js/453.09a8c62f.chunk.js",
+    "static/media/hero-fit.png": "/serenaviafit-react/static/media/hero-fit.5c5d791dfcac4e531cb0.png",
     "static/media/fuerza-sin-pesas.PNG": "/serenaviafit-react/static/media/fuerza-sin-pesas.f76e0f3c3b870d39a519.PNG",
     "static/media/antioxidantes.png": "/serenaviafit-react/static/media/antioxidantes.e5a16b8afb2537f6bf7a.png",
     "static/media/avena.png": "/serenaviafit-react/static/media/avena.7688c7be1dd935304987.png",
@@ -17,14 +18,13 @@
     "static/media/sueno.png": "/serenaviafit-react/static/media/sueno.e50777d5b45313116095.png",
     "static/media/ensalada-mediterranea.png": "/serenaviafit-react/static/media/ensalada-mediterranea.b813da7001f2092cf9ac.png",
     "static/media/bienestar.png": "/serenaviafit-react/static/media/bienestar.f2f95329c54d4c6f97b6.png",
-    "static/media/hero-fit.png": "/serenaviafit-react/static/media/hero-fit.84d72e45ac6caa21b98b.png",
     "index.html": "/serenaviafit-react/index.html",
-    "main.eaf4dedc.css.map": "/serenaviafit-react/static/css/main.eaf4dedc.css.map",
-    "main.9c3b7296.js.map": "/serenaviafit-react/static/js/main.9c3b7296.js.map",
+    "main.9d0588b6.css.map": "/serenaviafit-react/static/css/main.9d0588b6.css.map",
+    "main.76761858.js.map": "/serenaviafit-react/static/js/main.76761858.js.map",
     "453.09a8c62f.chunk.js.map": "/serenaviafit-react/static/js/453.09a8c62f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eaf4dedc.css",
-    "static/js/main.9c3b7296.js"
+    "static/css/main.9d0588b6.css",
+    "static/js/main.76761858.js"
   ]
 }
