@@ -3,6 +3,7 @@ import './Nutricion.css';
 import ensaladaImg from '../assets/ensalada-mediterranea.png';
 import aguacateImg from '../assets/aguacate.png';
 import avenaImg from '../assets/avena.png';
+import batidoImg from '../assets/batido-verde.png';
 import { Link } from 'react-router-dom';
 
 export default function Nutricion() {
@@ -13,7 +14,7 @@ export default function Nutricion() {
       <div className="card-grid">
         <div className="card">
           <img
-            src="https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=500" 
+            src={batidoImg}
             alt="Batido verde detox"
           />
           <h3>Batido Verde Detox</h3>

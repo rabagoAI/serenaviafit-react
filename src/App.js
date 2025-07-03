@@ -13,6 +13,8 @@ import RecetaBatido from './pages/RecetaBatido';
 import RecetaAvena from './pages/RecetaAvena';
 import RecetaAguacate from './pages/RecetaAguacate';
 import RecetaEnsalada from './pages/RecetaEnsalada';
+import BlogHidratacion from './pages/BlogHidratacion';
+import BlogMascarilla from './pages/BlogMascarilla';
 
 
 
@@ -35,8 +37,8 @@ function App() {
           <Route path="/receta/avena" element={<RecetaAvena />} />
           <Route path="/receta/aguacate" element={<RecetaAguacate />} />
           <Route path="/receta/ensalada" element={<RecetaEnsalada />} />
-
-
+          <Route path="/blog/hidratacion" element={<BlogHidratacion />} />
+          <Route path="/blog/mascarilla-avena" element={<BlogMascarilla />} />
 
         </Routes>
       </main>

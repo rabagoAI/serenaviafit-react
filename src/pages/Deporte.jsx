@@ -4,7 +4,7 @@ import EjercicioCard from '../components/EjercicioCard';
 
 import hiitImg from '../assets/hiit-casa.png';
 import yogaImg from '../assets/yoga-principiantes.png';
-import fuerzaImg from '../assets/fuerza-sin-pesas.PNG';
+import fuerzaImg from '../assets/fuerza-sin-pesas.png';
 import estiramientoImg from '../assets/estiramientos.png';
 
 
