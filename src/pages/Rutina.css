@@ -1,0 +1,39 @@
+.page-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos para el componente Temporizador */
+.temporizador {
+  background: #f0f8f7;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.temporizador button {
+  background: #2c5f2d;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.temporizador button:hover {
+  background: #1f4020;
+}
