@@ -1,13 +1,10 @@
 import './Deporte.css';
 import EjercicioCard from '../components/EjercicioCard';
 
-
 import hiitImg from '../assets/hiit-casa.png';
 import yogaImg from '../assets/yoga-principiantes.png';
-import fuerzaImg from '../assets/fuerza-sin-pesas.png';
+import fuerzaImg from '../assets/fuerza-sin-pesas.PNG'; // Elegimos esta versión
 import estiramientoImg from '../assets/estiramientos.png';
-
-
 
 export default function Deporte() {
   return (
@@ -20,13 +17,14 @@ export default function Deporte() {
           title="Rutina HIIT en casa"
           desc="Entrenamiento de alta intensidad en solo 20 minutos. Sin equipamiento."
           link="/rutina/hiit-en-casa"
-          />
+        />
+
         <EjercicioCard
           img={yogaImg}
           title="Yoga para Principiantes"
           desc="Estira, relaja y fortalece tu cuerpo y mente. Ideal para empezar el día."
           link="/rutina/yoga-principiantes"
-          />
+        />
 
         <EjercicioCard
           img={fuerzaImg}

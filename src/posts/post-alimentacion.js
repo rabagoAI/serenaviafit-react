@@ -4,7 +4,7 @@ const post = {
   id: 'post-alimentacion',
   title: 'Alimentación intuitiva: Escucha tu cuerpo',
   excerpt: 'Una guía para reconectar con tus señales internas y comer con equilibrio.',
-  image:alimentacionPost,
+  image: alimentacionPost,
   content: `
     La alimentación intuitiva no impone reglas rígidas. Escuchar tu cuerpo te enseña a:
 

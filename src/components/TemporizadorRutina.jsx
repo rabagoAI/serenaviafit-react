@@ -1,13 +1,12 @@
 import { useState, useEffect } from 'react';
 
+
 export default function TemporizadorRutina({ ejercicios }) {
   const [indiceActual, setIndiceActual] = useState(0);
   const [tiempoRestante, setTiempoRestante] = useState(0);
   const [activo, setActivo] = useState(false);
   const [finalizado, setFinalizado] = useState(false);
   const beep = new Audio(process.env.PUBLIC_URL + '/audio/beep.mp3');
-  
-
 
   useEffect(() => {
     let timer;
@@ -23,10 +22,9 @@ export default function TemporizadorRutina({ ejercicios }) {
           beep.play(); // 🔊 sonido al cambiar
           setIndiceActual(i => i + 1);
           setTiempoRestante(duracion);
-
         } else {
           beep.play(); // sonido final también
-        setFinalizado(true);
+          setFinalizado(true);
         }
       }
     }
@@ -61,13 +59,12 @@ export default function TemporizadorRutina({ ejercicios }) {
 
       <div className="barra-contenedor">
         <div
-        className="barra-progreso"
-        style={{
-        width: `${100 - (tiempoRestante / (typeof ejercicioActual === 'object' ? ejercicioActual.duracion : 40)) * 100}%`
-        }}
+          className="barra-progreso"
+          style={{
+            width: `${100 - (tiempoRestante / (typeof ejercicioActual === 'object' ? ejercicioActual.duracion : 40)) * 100}%`
+          }}
         />
       </div>
-
 
       {finalizado && (
         <h3>🎉 ¡Rutina completada!</h3>

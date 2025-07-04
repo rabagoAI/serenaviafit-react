@@ -20,7 +20,7 @@ ul li {
   margin-top: 2rem;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .temporizador button {
@@ -52,4 +52,3 @@ ul li {
   background: #2c5f2d;
   transition: width 1s linear;
 }
-

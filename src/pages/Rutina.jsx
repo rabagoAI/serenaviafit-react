@@ -1,14 +1,12 @@
 import { useParams } from 'react-router-dom';
 import rutinaHiit from '../rutinas/rutina-hiit';
 import rutinaYoga from '../rutinas/rutina-yoga';
-import TemporizadorRutina from '../components/TemporizadorRutina';
 import rutinaFuerza from '../rutinas/rutina-fuerza';
 import rutinaEstiramientos from '../rutinas/rutina-estiramientos';
+import TemporizadorRutina from '../components/TemporizadorRutina';
 import './Rutina.css';
 
-
 const rutinas = [rutinaHiit, rutinaYoga, rutinaFuerza, rutinaEstiramientos];
-
 
 export default function Rutina() {
   const { id } = useParams();
@@ -29,8 +27,6 @@ export default function Rutina() {
       </ul>
 
       <TemporizadorRutina ejercicios={rutina.ejercicios} duracion={40} />
-      
     </div>
   );
-  
 }

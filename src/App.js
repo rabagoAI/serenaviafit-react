@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Nutricion from './pages/Nutricion';
 import Deporte from './pages/Deporte';
@@ -9,15 +9,13 @@ import './assets/Header.css';
 import Blog from './pages/Blog';
 import Post from './pages/Post';
 import Rutina from './pages/Rutina';
+
 import RecetaBatido from './pages/RecetaBatido';
 import RecetaAvena from './pages/RecetaAvena';
 import RecetaAguacate from './pages/RecetaAguacate';
 import RecetaEnsalada from './pages/RecetaEnsalada';
 import BlogHidratacion from './pages/BlogHidratacion';
 import BlogMascarilla from './pages/BlogMascarilla';
-
-
-
 
 function App() {
   return (
@@ -33,6 +31,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<Post />} />
           <Route path="/rutina/:id" element={<Rutina />} />
+
           <Route path="/receta/batido-verde-detox" element={<RecetaBatido />} />
           <Route path="/receta/avena" element={<RecetaAvena />} />
           <Route path="/receta/aguacate" element={<RecetaAguacate />} />
@@ -46,7 +45,6 @@ function App() {
       <Footer />
     </Router>
   );
-  
 }
 
 export default App;
