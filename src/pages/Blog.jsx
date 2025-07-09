@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import hidratacionImg from '../assets/hidratacion.png';
-import mascarillaImg from '../assets/mascarilla.png';
 import posts from '../posts';
 import './Blog.css';
 

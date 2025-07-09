@@ -16,6 +16,8 @@ import RecetaAguacate from './pages/RecetaAguacate';
 import RecetaEnsalada from './pages/RecetaEnsalada';
 import BlogHidratacion from './pages/BlogHidratacion';
 import BlogMascarilla from './pages/BlogMascarilla';
+import RecetaHummus from './pages/RecetaHummus';
+
 
 function App() {
   return (
@@ -38,6 +40,7 @@ function App() {
           <Route path="/receta/ensalada" element={<RecetaEnsalada />} />
           <Route path="/blog/hidratacion" element={<BlogHidratacion />} />
           <Route path="/blog/mascarilla-avena" element={<BlogMascarilla />} />
+          <Route path="/receta/hummus" element={<RecetaHummus />} />
 
         </Routes>
       </main>

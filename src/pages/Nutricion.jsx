@@ -4,6 +4,8 @@ import ensaladaImg from '../assets/ensalada-mediterranea.png';
 import aguacateImg from '../assets/aguacate.png';
 import avenaImg from '../assets/avena.png';
 import batidoImg from '../assets/batido-verde.png';
+import hummusImg from '../assets/hummus-casero.png';
+
 import { Link } from 'react-router-dom';
 
 export default function Nutricion() {
@@ -54,6 +56,15 @@ export default function Nutricion() {
             Ver receta completa →
           </Link>
         </div>
+
+        <div className="card">
+          <img src={hummusImg} alt="Hummus Casero" />
+            <h3>Hummus Casero</h3>
+          <p>Crema suave y saludable de garbanzos ideal como snack o entrante.</p>
+          <Link to="/receta/hummus" className="ver-receta-link">
+           Ver receta →
+          </Link>
+</div>
       </div>
     </div>
   );

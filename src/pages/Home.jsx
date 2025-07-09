@@ -34,6 +34,10 @@ const Home = () => {
           <p>Nutritiva, saciante y perfecta para el desayuno o cena ligera.</p>
         </div>
       </div>
+
+      <Link to="/nutricion" className="btn-ver-todas">
+  Ver todas las recetas →
+</Link>
     </div>
   );
 };
