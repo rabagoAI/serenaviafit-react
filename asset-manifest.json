@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/serenaviafit-react/static/css/main.43168efe.css",
-    "main.js": "/serenaviafit-react/static/js/main.36684d41.js",
+    "main.css": "/serenaviafit-react/static/css/main.4cb0c6a4.css",
+    "main.js": "/serenaviafit-react/static/js/main.7a1d5267.js",
     "static/js/453.09a8c62f.chunk.js": "/serenaviafit-react/static/js/453.09a8c62f.chunk.js",
     "static/media/hero-fit.png": "/serenaviafit-react/static/media/hero-fit.5c5d791dfcac4e531cb0.png",
     "static/media/mascarilla.png": "/serenaviafit-react/static/media/mascarilla.859643c4f3d7da3972ed.png",
@@ -9,6 +9,8 @@
     "static/media/avena.png": "/serenaviafit-react/static/media/avena.30c295c49213cbe82654.png",
     "static/media/batido-verde.png": "/serenaviafit-react/static/media/batido-verde.2d83738521abdc9f5698.png",
     "static/media/hiit-casa.png": "/serenaviafit-react/static/media/hiit-casa.20d7356adff939eed53a.png",
+    "static/media/meditacion.png": "/serenaviafit-react/static/media/meditacion.11f1892ac40a47be368e.png",
+    "static/media/hummus-casero.png": "/serenaviafit-react/static/media/hummus-casero.4d05435563e74a492579.png",
     "static/media/ensalada-mediterranea.png": "/serenaviafit-react/static/media/ensalada-mediterranea.1de7281cb53dc193d2e2.png",
     "static/media/antioxidantes.png": "/serenaviafit-react/static/media/antioxidantes.074460850c302744928c.png",
     "static/media/estiramientos.png": "/serenaviafit-react/static/media/estiramientos.2c47072af63ed4b871a8.png",
@@ -22,12 +24,12 @@
     "static/media/ejercicio-regular.jpg": "/serenaviafit-react/static/media/ejercicio-regular.c5195a731a457a50cd4b.jpg",
     "static/media/alimentacionPost.jpeg": "/serenaviafit-react/static/media/alimentacionPost.5a5a7543eda665c0e474.jpeg",
     "index.html": "/serenaviafit-react/index.html",
-    "main.43168efe.css.map": "/serenaviafit-react/static/css/main.43168efe.css.map",
-    "main.36684d41.js.map": "/serenaviafit-react/static/js/main.36684d41.js.map",
+    "main.4cb0c6a4.css.map": "/serenaviafit-react/static/css/main.4cb0c6a4.css.map",
+    "main.7a1d5267.js.map": "/serenaviafit-react/static/js/main.7a1d5267.js.map",
     "453.09a8c62f.chunk.js.map": "/serenaviafit-react/static/js/453.09a8c62f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.43168efe.css",
-    "static/js/main.36684d41.js"
+    "static/css/main.4cb0c6a4.css",
+    "static/js/main.7a1d5267.js"
   ]
 }
