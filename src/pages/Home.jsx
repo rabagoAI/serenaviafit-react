@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import heroImage from '../assets/hero-fit.png'; // Ajusta la ruta según tu estructura
 import batidoImg from '../assets/batido-verde.png';
 import aguacateImg from '../assets/aguacate.png';
+import FormularioSuscripcion from '../components/FormularioSuscripcion';
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         </ul>
       </section>
 
+
       <h2 className="recetas-titulo">Recetas destacadas</h2>
       <div className="recetas-destacadas">
         <div className="receta">
@@ -35,9 +37,14 @@ const Home = () => {
         </div>
       </div>
 
+
       <Link to="/nutricion" className="btn-ver-todas">
   Ver todas las recetas →
 </Link>
+
+<section className="suscripcion">
+        <FormularioSuscripcion />
+      </section>
     </div>
   );
 };

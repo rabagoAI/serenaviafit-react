@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import Nutricion from './pages/Nutricion';
 import Deporte from './pages/Deporte';
 import Salud from './pages/Salud';
-import Footer from './assets/Footer';
+//import Footer from './assets/Footer';
 import Header from './assets/Header';
 import './assets/Header.css';
 import Blog from './pages/Blog';
@@ -45,7 +45,7 @@ function App() {
         </Routes>
       </main>
 
-      <Footer />
+    
     </Router>
   );
 }
