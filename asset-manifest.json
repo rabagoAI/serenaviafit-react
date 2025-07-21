@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/serenaviafit-react/static/css/main.3b6b0d52.css",
-    "main.js": "/serenaviafit-react/static/js/main.a5ec8ff4.js",
+    "main.js": "/serenaviafit-react/static/js/main.82d38d91.js",
     "static/js/453.09a8c62f.chunk.js": "/serenaviafit-react/static/js/453.09a8c62f.chunk.js",
     "static/media/hero-fit.png": "/serenaviafit-react/static/media/hero-fit.5c5d791dfcac4e531cb0.png",
+    "static/media/salmon.png": "/serenaviafit-react/static/media/salmon.e6477af3c703e14e40d5.png",
     "static/media/mascarilla.png": "/serenaviafit-react/static/media/mascarilla.859643c4f3d7da3972ed.png",
     "static/media/yoga-principiantes.png": "/serenaviafit-react/static/media/yoga-principiantes.46a46a623d1ca756f3a3.png",
     "static/media/avena.png": "/serenaviafit-react/static/media/avena.30c295c49213cbe82654.png",
@@ -25,11 +26,11 @@
     "static/media/alimentacionPost.jpeg": "/serenaviafit-react/static/media/alimentacionPost.5a5a7543eda665c0e474.jpeg",
     "index.html": "/serenaviafit-react/index.html",
     "main.3b6b0d52.css.map": "/serenaviafit-react/static/css/main.3b6b0d52.css.map",
-    "main.a5ec8ff4.js.map": "/serenaviafit-react/static/js/main.a5ec8ff4.js.map",
+    "main.82d38d91.js.map": "/serenaviafit-react/static/js/main.82d38d91.js.map",
     "453.09a8c62f.chunk.js.map": "/serenaviafit-react/static/js/453.09a8c62f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3b6b0d52.css",
-    "static/js/main.a5ec8ff4.js"
+    "static/js/main.82d38d91.js"
   ]
 }
