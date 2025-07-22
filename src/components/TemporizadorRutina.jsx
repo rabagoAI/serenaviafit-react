@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export default function TemporizadorRutina({ ejercicios }) {
   const [indiceActual, setIndiceActual] = useState(0);
   const [tiempoRestante, setTiempoRestante] = useState(0);
   const [activo, setActivo] = useState(false);
   const [finalizado, setFinalizado] = useState(false);
-  const beep = new Audio(process.env.PUBLIC_URL + '/audio/beep.mp3');
+  const beepRef = useRef(new Audio(process.env.PUBLIC_URL + '/audio/beep.mp3'));
   
 
 
@@ -20,12 +20,12 @@ export default function TemporizadorRutina({ ejercicios }) {
         if (indiceActual < ejercicios.length - 1) {
           const siguiente = ejercicios[indiceActual + 1];
           const duracion = typeof siguiente === 'object' ? siguiente.duracion : 40;
-          beep.play(); // 🔊 sonido al cambiar
+          beepRef.play(); // 🔊 sonido al cambiar
           setIndiceActual(i => i + 1);
           setTiempoRestante(duracion);
 
         } else {
-          beep.play(); // sonido final también
+          beepRef.play(); // sonido final también
         setFinalizado(true);
         }
       }
