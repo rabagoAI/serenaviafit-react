@@ -4,6 +4,7 @@ import ensaladaImg from '../assets/ensalada-mediterranea.png';
 import aguacateImg from '../assets/aguacate.png';
 import avenaImg from '../assets/avena.png';
 import batidoImg from '../assets/batido-verde.png';
+import hummusImg from '../assets/hummus-casero.png';
 import { Link } from 'react-router-dom';
 
 export default function Nutricion() {
@@ -20,7 +21,7 @@ export default function Nutricion() {
           <h3>Batido Verde Detox</h3>
           <p>Espinaca, plátano, manzana y jengibre para un desayuno energético.</p>
           <Link to="/receta/batido-verde-detox" className="ver-receta-link">
-          Ver receta completa →
+            Ver receta completa →
           </Link>
         </div>
 
@@ -52,6 +53,16 @@ export default function Nutricion() {
           <p>Avena con bebida vegetal, frutas rojas y semillas de chía.</p>
           <Link to="/receta/avena" className="ver-receta-link">
             Ver receta completa →
+          </Link>
+        </div>
+
+
+        <div className="card">
+          <img src={hummusImg} alt="Hummus Casero" />
+          <h3>Hummus Casero</h3>
+          <p>Crema suave y saludable de garbanzos ideal como snack o entrante.</p>
+          <Link to="/receta/hummus" className="btn-receta">
+            Ver receta →
           </Link>
         </div>
       </div>
