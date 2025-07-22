@@ -3,7 +3,7 @@ import EjercicioCard from '../components/EjercicioCard';
 
 import hiitImg from '../assets/hiit-casa.png';
 import yogaImg from '../assets/yoga-principiantes.png';
-import fuerzaImg from '../assets/fuerza-sin-pesas.PNG'; // Elegimos esta versión
+import fuerzaImg from '../assets/fuerza-sin-pesas.png'; // Elegimos esta versión
 import estiramientoImg from '../assets/estiramientos.png';
 
 export default function Deporte() {
