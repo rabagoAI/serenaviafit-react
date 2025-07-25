@@ -4,11 +4,40 @@ import heroImage from '../assets/hero-fit.png'; // Ajusta la ruta según tu estr
 import batidoImg from '../assets/batido-verde.png';
 import aguacateImg from '../assets/aguacate.png';
 import FormularioSuscripcion from '../components/FormularioSuscripcion';
+import { Helmet } from 'react-helmet';
+
 
 
 const Home = () => {
   return (
     <div className="home-container">
+
+<Helmet>
+  <title>Inicio | SerenaViaFit</title>
+  <meta
+    name="description"
+    content="Bienvenida a SerenaViaFit: nutrición real, entrenamientos funcionales y bienestar auténtico para tu día a día."
+  />
+  <meta
+    name="keywords"
+    content="nutrición, recetas saludables, bienestar, ejercicio funcional, SerenaViaFit"
+  />
+  <meta name="author" content="SerenaViaFit" />
+  <meta property="og:title" content="SerenaViaFit - Nutrición y Bienestar" />
+  <meta
+    property="og:description"
+    content="Descubre recetas fáciles, rutinas en casa y consejos de salud emocional para mujeres reales."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://serenaviafit.vercel.app" />
+  <meta
+    property="og:image"
+    content="https://i.ibb.co/tQtMMYj/serenaviafit-banner.jpg"
+  />
+</Helmet>
+
+
+
       <div className="hero-optimizada" style={{ backgroundImage: `url(${heroImage})` }}>
         <h1 className="hero-titulo">Bienvenida a SerenaViaFit</h1>
         <p className="hero-subtitulo">Nutrición real, movimiento funcional y bienestar auténtico.</p>
