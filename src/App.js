@@ -17,6 +17,8 @@ import RecetaEnsalada from './pages/RecetaEnsalada';
 import BlogHidratacion from './pages/BlogHidratacion';
 import BlogMascarilla from './pages/BlogMascarilla';
 import RecetaHummus from './pages/RecetaHummus';
+import RecetaSalmon from './pages/RecetaSalmon';
+import RecetaSopaCalbaza from './pages/RecetaSopaCalabaza';
 
 
 
@@ -43,6 +45,8 @@ function App() {
           <Route path="/blog/hidratacion" element={<BlogHidratacion />} />
           <Route path="/blog/mascarilla-avena" element={<BlogMascarilla />} />
           <Route path="/receta/hummus" element={<RecetaHummus />} />
+          <Route path="/receta/salmon" element={<RecetaSalmon />} />
+          <Route path="/receta/sopaCalabaza" element={<RecetaSopaCalbaza/>} />
          
 
         </Routes>

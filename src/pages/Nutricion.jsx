@@ -5,6 +5,8 @@ import aguacateImg from '../assets/aguacate.png';
 import avenaImg from '../assets/avena.png';
 import batidoImg from '../assets/batido-verde.png';
 import hummusImg from '../assets/hummus-casero.png';
+import salmonImg from '../assets/salmon.png'
+import sopaCalabazaImg from '../assets/sopa-calabaza.png'
 import { Link } from 'react-router-dom';
 
 export default function Nutricion() {
@@ -65,6 +67,31 @@ export default function Nutricion() {
             Ver receta →
           </Link>
         </div>
+
+        <div className="card">
+          <img src={salmonImg} alt="Salmón al horno" />
+          <h3>Salmón al horno con verduras</h3>
+          <p>Salmón al horno rico en Omega 3.</p>
+          <Link to="/receta/salmon" className="btn-receta">
+            Ver receta →
+          </Link>
+        </div>
+
+        <div className="card">
+          <img src={sopaCalabazaImg} alt="Sopa calabaza" />
+          <h3>Sopa de calabaza y jengibre</h3>
+          <p>Sopa ideal para el control de tu peso.</p>
+          <Link to="/receta/sopaCalabaza" className="btn-receta">
+            Ver receta →
+          </Link>
+        </div>
+
+
+
+
+
+
+
       </div>
     </div>
   );
