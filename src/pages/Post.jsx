@@ -1,7 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import posts from '../posts';
 import { useStackedCards } from '../hooks/useStackedCards';
-import AnimatedCard from '../components/AnimatedCard';
 import TextReveal from '../components/TextReveal';
 import FadeInSection from '../components/FadeInSection';
 import './Post.css';

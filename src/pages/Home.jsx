@@ -18,14 +18,6 @@ const recetasDestacadas = [
   { img: avenaImg, titulo: 'Bowl de Avena', desc: 'Avena con bebida vegetal, frutas rojas y semillas de chía.', slug: 'avena', badge: '🌾 Saciante' },
 ];
 
-const heroTextVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (i) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.65, delay: i * 0.18, ease: [0.25, 0.46, 0.45, 0.94] },
-  }),
-};
 
 const introItems = [
   { icon: '🥗', label: 'Nutrición Consciente', desc: 'Recetas fáciles, equilibradas y con ingredientes reales. Sin complicaciones.' },
