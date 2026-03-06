@@ -1,30 +1,39 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
+import FormularioSuscripcion from '../components/FormularioSuscripcion';
 
 export default function Footer() {
-  const [mensaje, setMensaje] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setMensaje('¡Gracias por suscribirte! 😊');
-    e.target.reset();
-  };
-
   return (
     <footer className="footer">
       <div className="footer-content">
-        <h3>Suscríbete a SerenaViaFit</h3>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="email"
-            name="email"
-            placeholder="Tu correo electrónico"
-            required
-          />
-          <button type="submit">Suscribirme</button>
-        </form>
-        {mensaje && <p className="mensaje-exito">{mensaje}</p>}
-        <p className="copyright">© 2025 SerenaViaFit · Salud con propósito</p>
+        <div className="footer-grid">
+          {/* Columna 1: Marca */}
+          <div className="footer-col">
+            <h3 className="footer-brand">SerenaViaFit</h3>
+            <p className="footer-tagline">Nutrición real, movimiento funcional y bienestar auténtico para tu día a día.</p>
+          </div>
+
+          {/* Columna 2: Navegación */}
+          <div className="footer-col">
+            <h4>Explorar</h4>
+            <nav className="footer-nav" aria-label="Navegación del pie de página">
+              <Link to="/nutricion">Recetas</Link>
+              <Link to="/deporte">Entrenamientos</Link>
+              <Link to="/salud">Salud y Belleza</Link>
+              <Link to="/blog">Blog</Link>
+            </nav>
+          </div>
+
+          {/* Columna 3: Suscripción */}
+          <div className="footer-col footer-col--suscripcion">
+            <FormularioSuscripcion />
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <p>© 2025 SerenaViaFit · Salud con propósito</p>
+        </div>
       </div>
     </footer>
   );

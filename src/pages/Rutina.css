@@ -20,7 +20,7 @@ ul li {
   margin-top: 2rem;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .temporizador button {
@@ -53,3 +53,18 @@ ul li {
   transition: width 1s linear;
 }
 
+.temporizador-controles {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.temporizador .btn-reiniciar {
+  background: #888;
+}
+
+.temporizador .btn-reiniciar:hover {
+  background: #666;
+}

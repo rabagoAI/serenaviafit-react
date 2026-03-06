@@ -1,42 +1,39 @@
-.page-container {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: auto;
+/* Las clases .page-container, .page-title, .card-grid y .card
+   están definidas en src/styles/global.css */
+
+:root {
+  --nutricion-fondo: #0d1a0e;
+  --nutricion-glow: #1a3d1b;
+  --nutricion-verde-claro: #7bc67e;
 }
 
-.page-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #2c5f2d;
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-}
-
-.card {
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.card img {
+.nutricion-dark-bg {
+  background-color: var(--nutricion-fondo);
+  background: radial-gradient(ellipse 80% 60% at 50% 10%, var(--nutricion-glow) 0%, var(--nutricion-fondo) 70%);
+  min-height: 100vh;
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  color: #f4f8f4;
 }
 
-.card h3 {
-  color: #2c5f2d;
-  margin: 1rem 0 0.5rem;
+/* Modificar el titulo por defecto para que sea blanco/claro sobre fondo oscuro */
+.nutricion-dark-bg .page-title {
+  color: #f4f8f4;
 }
 
-.card p {
-  padding: 0 1rem 1rem;
-  color: #555;
+.nutricion-dark-bg .page-subtitle {
+  color: rgba(244, 248, 244, 0.7);
+}
+
+.ver-receta-link {
+  display: inline-block;
+  margin: 0 1rem 1.2rem;
+  color: var(--nutricion-verde-claro);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.ver-receta-link:hover {
+  color: #f4f8f4;
+  text-decoration: underline;
 }

@@ -3,8 +3,9 @@ import alimentacionPost from '../assets/hidratacion.png';
 const post = {
   id: 'post-hidratacion',
   title: 'La importancia de la hidratación diaria',
+  category: 'salud',
   excerpt: 'Una guía para reconectar con tus señales internas y comer con equilibrio.',
-  image:alimentacionPost,
+  image: alimentacionPost,
   content: `
     Mantenerse hidratado es fundamental para el buen funcionamiento del cuerpo. El agua representa aproximadamente el 60% de nuestro organismo, y participa en procesos clave como la digestión, la circulación y la regulación de la temperatura.
 

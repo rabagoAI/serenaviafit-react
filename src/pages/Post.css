@@ -1,0 +1,90 @@
+:root {
+  --post-fondo: #0d1a0e;
+  --post-glow: #1a3d1b;
+  --post-verde-claro: #7bc67e;
+  --post-card-bg: rgba(26, 61, 27, 0.4); /* Fondo semi-transparente oscuro para la tarjeta */
+  --post-card-border: rgba(123, 198, 126, 0.3); /* Borde verde claro sutil */
+}
+
+.post-layout-wrapper {
+  background-color: var(--post-fondo);
+  background: radial-gradient(ellipse 80% 60% at 50% 10%, var(--post-glow) 0%, var(--post-fondo) 70%);
+  min-height: 100vh;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  color: #f4f8f4;
+}
+
+.post-single-column {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  color: #f4f8f4;
+  margin-bottom: 2.5rem;
+  line-height: 1.15;
+}
+
+.post-header {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.post-body-stacked {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* Espacio extra abajo para que el scroll tenga recorrido final */
+  padding-bottom: 50vh;
+}
+
+.btn-back {
+  display: inline-block;
+  color: var(--post-verde-claro);
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--post-verde-claro);
+  padding: 0.8rem 1.6rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: var(--post-verde-claro);
+  color: var(--post-fondo);
+  transform: translateY(-2px);
+}
+
+/* Estilos de las Tarjetas de Texto apiladas */
+.text-card {
+  width: 100%;
+  position: relative;
+  background-color: var(--post-card-bg);
+  backdrop-filter: blur(12px); /* Efecto Glassmorphism */
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: var(--border-radius, 16px);
+  padding: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: rgba(244, 248, 244, 0.9); /* Texto casi blanco */
+  text-align: left;
+  border: 1px solid var(--post-card-border);
+  box-shadow: 0 -10px 40px rgba(0,0,0,0.3); /* Sombra más fuerte y oscura para resaltar sobre el fondo verde */
+  margin-bottom: 2rem;
+  transform-origin: top center;
+  will-change: transform, opacity;
+}
+
+.text-card p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .text-card {
+    padding: 1.5rem;
+    font-size: 1.05rem;
+  }
+}
