@@ -1,96 +1,120 @@
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import './Nutricion.css';
+import { Helmet } from 'react-helmet-async';
+import TextReveal from '../components/TextReveal';
+import recetas from '../data/recetas';
+import AnimatedCard from '../components/AnimatedCard';
+import FadeInSection from '../components/FadeInSection';
+import { useFavoritos } from '../hooks/useFavoritos';
 
-import ensaladaImg from '../assets/ensalada-mediterranea.png';
-import aguacateImg from '../assets/aguacate.png';
-import avenaImg from '../assets/avena.png';
-import batidoImg from '../assets/batido-verde.png';
-import hummusImg from '../assets/hummus-casero.png';
-import salmonImg from '../assets/salmon.png'
-import sopaCalabazaImg from '../assets/sopa-calabaza.png'
-import { Link } from 'react-router-dom';
+const CATEGORIAS = ['Todos', 'Desayuno', 'Almuerzo', 'Cena', 'Snack'];
 
 export default function Nutricion() {
+  const [filtro, setFiltro] = useState('Todos');
+  const [busqueda, setBusqueda] = useState('');
+  const { toggleFavorito, esFavorito } = useFavoritos();
+
+  const recetasFiltradas = recetas.filter((r) => {
+    const coincideCategoria = filtro === 'Todos' || r.categoria === filtro;
+    const q = busqueda.trim().toLowerCase();
+    const coincideBusqueda = !q || r.titulo.toLowerCase().includes(q) || r.descripcion.toLowerCase().includes(q);
+    return coincideCategoria && coincideBusqueda;
+  });
+
   return (
-    <div className="page-container">
-      <h2 className="page-title">Recetas Saludables</h2>
+    <div className="nutricion-dark-bg">
+      <div className="page-container">
+        <Helmet>
+          <title>Recetas Saludables | SerenaViaFit</title>
+          <meta name="description" content="Descubre recetas saludables y fáciles: batidos, ensaladas, bowls de avena, hummus y más. Nutrición real para tu día a día." />
+        </Helmet>
 
-      <div className="card-grid">
-        <div className="card">
-          <img
-            src={batidoImg}
-            alt="Batido verde detox"
+        <FadeInSection>
+          <TextReveal as="h1" className="page-title" text="Recetas Saludables" />
+          <p className="page-subtitle">Ingredientes reales, sabor auténtico y fáciles de preparar.</p>
+        </FadeInSection>
+
+        {/* Buscador */}
+        <div className="buscador-wrapper">
+          <span className="buscador-icon">🔍</span>
+          <input
+            type="text"
+            className="buscador-input"
+            placeholder="Buscar receta..."
+            value={busqueda}
+            onChange={(e) => setBusqueda(e.target.value)}
           />
-          <h3>Batido Verde Detox</h3>
-          <p>Espinaca, plátano, manzana y jengibre para un desayuno energético.</p>
-          <Link to="/receta/batido-verde-detox" className="ver-receta-link">
-            Ver receta completa →
-          </Link>
+          {busqueda && (
+            <button className="buscador-clear" onClick={() => setBusqueda('')} aria-label="Limpiar búsqueda">✕</button>
+          )}
         </div>
 
-        <div className="card">
-          <img src={ensaladaImg} alt="Ensalada mediterránea" />
-
-          <h3>Ensalada Mediterránea</h3>
-          <p>Garbanzos, pepino, tomate cherry, y aceite de oliva virgen extra.</p>
-          <Link to="/receta/ensalada" className="ver-receta-link">
-            Ver receta completa →
-          </Link>
-
+        {/* Filtros */}
+        <div className="filtros-bar">
+          {CATEGORIAS.map(cat => (
+            <button
+              key={cat}
+              className={`filtro-btn${filtro === cat ? ' filtro-btn--active' : ''}`}
+              onClick={() => setFiltro(cat)}
+            >
+              {filtro === cat && (
+                <motion.span
+                  layoutId="filtro-pill"
+                  className="filtro-pill"
+                  transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                />
+              )}
+              <span className="filtro-label">{cat}</span>
+            </button>
+          ))}
         </div>
 
-        <div className="card">
-          <img src={aguacateImg} alt="Tostada de aguacate" />
+        {/* Contador resultados */}
+        <AnimatePresence>
+          {(busqueda || filtro !== 'Todos') && (
+            <motion.p
+              className="resultados-count"
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              {recetasFiltradas.length === 0
+                ? 'Sin resultados'
+                : `${recetasFiltradas.length} receta${recetasFiltradas.length !== 1 ? 's' : ''}`}
+            </motion.p>
+          )}
+        </AnimatePresence>
 
-          <h3>Tostada de Aguacate</h3>
-          <p>Pan integral con aguacate, huevo poché y semillas de sésamo.</p>
-          <Link to="/receta/aguacate" className="ver-receta-link">
-            Ver receta completa →
-          </Link>
-        </div>
-
-        <div className="card">
-          <img src={avenaImg} alt="Bowl de avena" />
-
-          <h3>Bowl de Avena</h3>
-          <p>Avena con bebida vegetal, frutas rojas y semillas de chía.</p>
-          <Link to="/receta/avena" className="ver-receta-link">
-            Ver receta completa →
-          </Link>
-        </div>
-
-
-        <div className="card">
-          <img src={hummusImg} alt="Hummus Casero" />
-          <h3>Hummus Casero</h3>
-          <p>Crema suave y saludable de garbanzos ideal como snack o entrante.</p>
-          <Link to="/receta/hummus" className="btn-receta">
-            Ver receta →
-          </Link>
-        </div>
-
-        <div className="card">
-          <img src={salmonImg} alt="Salmón al horno" />
-          <h3>Salmón al horno con verduras</h3>
-          <p>Salmón al horno rico en Omega 3.</p>
-          <Link to="/receta/salmon" className="btn-receta">
-            Ver receta →
-          </Link>
-        </div>
-
-        <div className="card">
-          <img src={sopaCalabazaImg} alt="Sopa calabaza" />
-          <h3>Sopa de calabaza y jengibre</h3>
-          <p>Sopa ideal para el control de tu peso.</p>
-          <Link to="/receta/sopaCalabaza" className="btn-receta">
-            Ver receta →
-          </Link>
-        </div>
-
-
-
-
-
-
+        {/* Grid de recetas */}
+        <motion.div className="card-grid" layout>
+          <AnimatePresence mode="popLayout">
+            {recetasFiltradas.map((receta) => (
+              <motion.div
+                key={receta.slug}
+                layout
+                initial={{ opacity: 0, scale: 0.88 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.88 }}
+                transition={{ duration: 0.22, ease: 'easeOut' }}
+              >
+                <AnimatedCard
+                  img={receta.imagen}
+                  alt={receta.titulo}
+                  title={receta.titulo}
+                  desc={receta.descripcion}
+                  link={`/receta/${receta.slug}`}
+                  linkText="Ver receta completa →"
+                  badge={receta.categoria}
+                  slug={receta.slug}
+                  esFavorito={esFavorito(receta.slug)}
+                  onToggleFavorito={toggleFavorito}
+                />
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </motion.div>
 
       </div>
     </div>

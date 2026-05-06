@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "SerenaViaFit",
+  "name": "SerenaViaFit - Nutrición y Bienestar",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#2c5f2d",
+  "background_color": "#f9f9f9",
+  "description": "Nutrición real, entrenamientos funcionales y bienestar auténtico para tu día a día."
 }

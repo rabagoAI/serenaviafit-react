@@ -1,62 +1,70 @@
-.page-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 2rem;
+/* Las clases .page-container, .page-title, .card-grid y .card
+   están definidas en src/styles/global.css */
+
+:root {
+  --blog-fondo: #0d1a0e;
+  --blog-glow: #1a3d1b;
+  --blog-verde-claro: #7bc67e;
 }
 
-.page-title {
-  font-size: 2rem;
-  color: #2c5f2d;
-  margin-bottom: 2rem;
-  text-align: center;
+.blog-dark-bg {
+  background-color: var(--blog-fondo);
+  background: radial-gradient(ellipse 80% 60% at 50% 10%, var(--blog-glow) 0%, var(--blog-fondo) 70%);
+  min-height: 100vh;
+  width: 100%;
+  color: #f4f8f4;
 }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+.blog-dark-bg .page-title {
+  color: #f4f8f4;
 }
 
-.card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.blog-dark-bg .page-subtitle {
+  color: rgba(244, 248, 244, 0.7);
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+.filters-container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 0.75rem;
+   margin-bottom: 2.5rem;
+   padding: 0 1rem;
 }
 
-.card h3 {
-  font-size: 1.3rem;
-  color: #2c5f2d;
-  margin-bottom: 0.5rem;
+.filter-btn {
+   background: rgba(255, 255, 255, 0.05);
+   border: 1px solid rgba(255, 255, 255, 0.1);
+   color: #a0aec0;
+   padding: 0.6rem 1.2rem;
+   border-radius: 50px;
+   cursor: pointer;
+   font-size: 0.9rem;
+   font-weight: 500;
+   transition: all 0.3s ease;
+   backdrop-filter: blur(10px);
 }
 
-.card p {
-  color: #555;
-  margin-bottom: 1rem;
-  line-height: 1.5;
+.filter-btn:hover {
+   background: rgba(255, 255, 255, 0.1);
+   color: #fff;
+   transform: translateY(-2px);
 }
 
-.card a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.card a:hover {
-  color: #0056b3;
+.filter-btn--active {
+   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+   border-color: transparent;
+   color: white;
+   box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3);
 }
 
 @media (max-width: 768px) {
-  .page-container {
-    padding: 1rem;
-  }
+   .filters-container {
+      gap: 0.5rem;
+   }
+
+   .filter-btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+   }
 }
-
-
