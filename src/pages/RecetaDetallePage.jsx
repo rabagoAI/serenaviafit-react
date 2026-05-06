@@ -26,6 +26,8 @@ export default function RecetaDetallePage() {
             <RecetaDetalle
                 titulo={receta.titulo}
                 imagen={receta.imagen}
+                descripcion={receta.descripcion}
+                categoria={receta.categoria}
                 nutricion={receta.nutricion}
                 beneficios={receta.beneficios}
                 ingredientes={receta.ingredientes}

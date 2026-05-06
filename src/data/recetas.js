@@ -1,20 +1,15 @@
-import batidoImg from '../assets/batido-verde.png';
-import avenaImg from '../assets/avena.png';
-import aguacateImg from '../assets/aguacate.png';
-import ensaladaImg from '../assets/ensalada-mediterranea.png';
-import hummusImg from '../assets/hummus-casero.png';
-import salmonImg from '../assets/salmon.png';
-import sopaCalabazaImg from '../assets/sopa-calabaza.png';
-import buddhaBowlImg from '../assets/buddha-bowl.png';
-import yogurImg from '../assets/yogur-frutos-rojos.png';
-import sopaLentejasImg from '../assets/sopa-lentejas.png';
-import polloImg from '../assets/pollo-salteado.jpeg';
-import bolasImg from '../assets/bolas-energia.png';
-
-
-
-// 🖼️ Imágenes pendientes: añade tus fotos en src/assets/ y actualiza estos imports:
-// sopa-lentejas.png, pollo-verduras.png, bolas-energia.png
+import batidoImg from '../assets/batido-verde.webp';
+import avenaImg from '../assets/avena.webp';
+import aguacateImg from '../assets/aguacate.webp';
+import ensaladaImg from '../assets/ensalada-mediterranea.webp';
+import hummusImg from '../assets/hummus-casero.webp';
+import salmonImg from '../assets/salmon.webp';
+import sopaCalabazaImg from '../assets/sopa-calabaza.webp';
+import buddhaBowlImg from '../assets/buddha-bowl.webp';
+import yogurImg from '../assets/yogur-frutos-rojos.webp';
+import sopaLentejasImg from '../assets/sopa-lentejas.webp';
+import polloImg from '../assets/pollo-salteado.webp';
+import bolasImg from '../assets/bolas-energia.webp';
 
 
 
@@ -24,6 +19,7 @@ const recetas = [
     {
         slug: 'batido-verde-detox',
         titulo: 'Batido Verde Detox',
+        categoria: 'Desayuno',
         imagen: batidoImg,
         descripcion: 'Refrescante y lleno de nutrientes para empezar tu día con energía.',
         nutricion: { calorias: 110, carbohidratos: 20, fibra: 5, proteinas: 3, grasas: 1 },
@@ -52,6 +48,7 @@ const recetas = [
     {
         slug: 'avena',
         titulo: 'Bowl de Avena',
+        categoria: 'Desayuno',
         imagen: avenaImg,
         descripcion: 'Avena con bebida vegetal, frutas rojas y semillas de chía.',
         nutricion: { calorias: 280, carbohidratos: 45, fibra: 8, proteinas: 9, grasas: 6 },
@@ -80,6 +77,7 @@ const recetas = [
     {
         slug: 'aguacate',
         titulo: 'Tostada de Aguacate',
+        categoria: 'Desayuno',
         imagen: aguacateImg,
         descripcion: 'Pan integral con aguacate, huevo poché y semillas de sésamo.',
         nutricion: { calorias: 320, carbohidratos: 28, fibra: 7, proteinas: 14, grasas: 18 },
@@ -108,6 +106,7 @@ const recetas = [
     {
         slug: 'ensalada',
         titulo: 'Ensalada Mediterránea',
+        categoria: 'Almuerzo',
         imagen: ensaladaImg,
         descripcion: 'Garbanzos, pepino, tomate cherry, y aceite de oliva virgen extra.',
         nutricion: { calorias: 240, carbohidratos: 30, fibra: 9, proteinas: 10, grasas: 9 },
@@ -137,6 +136,7 @@ const recetas = [
     {
         slug: 'hummus',
         titulo: 'Hummus Casero',
+        categoria: 'Snack',
         imagen: hummusImg,
         descripcion: 'Crema suave y saludable de garbanzos ideal como snack o entrante.',
         nutricion: { calorias: 170, carbohidratos: 18, fibra: 5, proteinas: 7, grasas: 8 },
@@ -165,6 +165,7 @@ const recetas = [
     {
         slug: 'salmon',
         titulo: 'Salmón al Horno con Verduras',
+        categoria: 'Cena',
         imagen: salmonImg,
         descripcion: 'Salmón al horno rico en Omega 3, acompañado de verduras de temporada.',
         nutricion: { calorias: 380, carbohidratos: 12, fibra: 4, proteinas: 38, grasas: 20 },
@@ -193,6 +194,7 @@ const recetas = [
     {
         slug: 'sopa-calabaza',
         titulo: 'Sopa de Calabaza y Jengibre',
+        categoria: 'Cena',
         imagen: sopaCalabazaImg,
         descripcion: 'Sopa cremosa y reconfortante, ideal para el control de peso.',
         nutricion: { calorias: 140, carbohidratos: 22, fibra: 4, proteinas: 3, grasas: 5 },
@@ -225,6 +227,7 @@ const recetas = [
     {
         slug: 'buddha-bowl-quinoa',
         titulo: 'Buddha Bowl de Quinoa',
+        categoria: 'Almuerzo',
         imagen: buddhaBowlImg,
         descripcion: 'Bol completo con quinoa, garbanzos asados, aguacate y aliño de tahini. Nutritivo y saciante.',
         nutricion: { calorias: 420, carbohidratos: 48, fibra: 12, proteinas: 18, grasas: 16 },
@@ -255,6 +258,7 @@ const recetas = [
     {
         slug: 'yogur-frutos-rojos',
         titulo: 'Yogur con Frutos Rojos y Granola',
+        categoria: 'Desayuno',
         imagen: yogurImg,
         descripcion: 'Desayuno rápido y delicioso: yogur griego, granola crujiente y frutos rojos frescos.',
         nutricion: { calorias: 220, carbohidratos: 28, fibra: 4, proteinas: 14, grasas: 5 },
@@ -282,6 +286,7 @@ const recetas = [
     {
         slug: 'sopa-lentejas',
         titulo: 'Sopa de Lentejas con Cúrcuma',
+        categoria: 'Cena',
         imagen: sopaLentejasImg,
         descripcion: 'Sopa reconfortante de lentejas rojas con especias antiinflamatorias. Lista en 30 minutos.',
         nutricion: { calorias: 260, carbohidratos: 38, fibra: 11, proteinas: 16, grasas: 5 },
@@ -313,6 +318,7 @@ const recetas = [
     {
         slug: 'pollo-salteado-verduras',
         titulo: 'Pollo Salteado con Verduras',
+        categoria: 'Cena',
         imagen: polloImg,
         descripcion: 'Salteado de pollo con brócoli, pimiento y zanahoria. Alto en proteínas y listo en 20 minutos.',
         nutricion: { calorias: 340, carbohidratos: 18, fibra: 5, proteinas: 42, grasas: 10 },
@@ -343,6 +349,7 @@ const recetas = [
     {
         slug: 'bolas-energia',
         titulo: 'Bolas de Energía de Avena y Dátiles',
+        categoria: 'Snack',
         imagen: bolasImg,
         descripcion: 'Snack saludable sin horno: avena, dátiles, mantequilla de cacahuete y chocolate negro.',
         nutricion: { calorias: 95, carbohidratos: 14, fibra: 2, proteinas: 3, grasas: 4 },

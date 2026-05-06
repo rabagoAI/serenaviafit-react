@@ -24,6 +24,121 @@
   color: rgba(244, 248, 244, 0.7);
 }
 
+/* ── Buscador ────────────────────────────────────────────── */
+.buscador-wrapper {
+  position: relative;
+  max-width: 440px;
+  margin: 2rem auto 0;
+}
+
+.buscador-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.95rem;
+  pointer-events: none;
+}
+
+.buscador-input {
+  width: 100%;
+  padding: 0.7rem 2.8rem 0.7rem 2.6rem;
+  border-radius: 999px;
+  border: 1.5px solid rgba(123, 198, 126, 0.4);
+  background: rgba(255, 255, 255, 0.06);
+  color: #f4f8f4;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+  box-sizing: border-box;
+}
+
+.buscador-input::placeholder { color: rgba(244, 248, 244, 0.4); }
+.buscador-input:focus {
+  border-color: var(--nutricion-verde-claro);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.buscador-clear {
+  position: absolute;
+  right: 0.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgba(244, 248, 244, 0.5);
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0.2rem;
+  transition: color 0.2s;
+}
+.buscador-clear:hover { color: #f4f8f4; }
+
+/* ── Contador resultados ─────────────────────────────────── */
+.resultados-count {
+  text-align: center;
+  font-size: 0.82rem;
+  color: rgba(244, 248, 244, 0.5);
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+/* ── Filtros ─────────────────────────────────────────────── */
+.filtros-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 2rem 0 2.5rem;
+}
+
+.filtro-btn {
+  position: relative;
+  padding: 0.45rem 1.2rem;
+  border: 1.5px solid rgba(123, 198, 126, 0.35);
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(244, 248, 244, 0.65);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+  overflow: hidden;
+}
+
+.filtro-btn:hover {
+  border-color: var(--nutricion-verde-claro);
+  color: #f4f8f4;
+}
+
+.filtro-btn--active {
+  border-color: var(--nutricion-verde-claro);
+  color: #0d1a0e;
+}
+
+.filtro-pill {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: var(--nutricion-verde-claro);
+  z-index: 0;
+}
+
+.filtro-label {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Badge en la card ────────────────────────────────────── */
+.acard__badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .ver-receta-link {
   display: inline-block;
   margin: 0 1rem 1.2rem;

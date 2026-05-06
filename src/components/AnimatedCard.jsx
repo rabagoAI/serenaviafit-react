@@ -1,16 +1,33 @@
+import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import './AnimatedCard.css';
 
-/**
- * AnimatedCard — Tarjeta moderna con animación de entrada controlada por el grid padre.
- */
-export default function AnimatedCard({ img, alt, title, desc, link, linkText = 'Ver más →', badge }) {
+export default function AnimatedCard({ img, alt, title, desc, link, linkText = 'Ver más →', badge, slug, esFavorito, onToggleFavorito }) {
     return (
         <div className="acard stagger-item">
             {img && (
                 <div className="acard__img-wrapper">
                     <img src={img} alt={alt || title} loading="lazy" className="acard__img" />
                     {badge && <span className="acard__badge">{badge}</span>}
+                    {onToggleFavorito && (
+                        <button
+                            className={`acard__fav${esFavorito ? ' acard__fav--active' : ''}`}
+                            onClick={(e) => { e.preventDefault(); onToggleFavorito(slug); }}
+                            aria-label={esFavorito ? 'Quitar de favoritos' : 'Añadir a favoritos'}
+                        >
+                            <AnimatePresence mode="wait" initial={false}>
+                                <motion.span
+                                    key={esFavorito ? 'lleno' : 'vacio'}
+                                    initial={{ scale: 0.5, opacity: 0 }}
+                                    animate={{ scale: 1, opacity: 1 }}
+                                    exit={{ scale: 0.5, opacity: 0 }}
+                                    transition={{ duration: 0.18 }}
+                                >
+                                    {esFavorito ? '♥' : '♡'}
+                                </motion.span>
+                            </AnimatePresence>
+                        </button>
+                    )}
                     <div className="acard__img-overlay" />
                 </div>
             )}
